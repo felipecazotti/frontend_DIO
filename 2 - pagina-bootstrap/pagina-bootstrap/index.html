@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <title>Minha Página</title>
+    <meta charset="utf-8">
+    <!--Adicao do bootstrap. bootstrap.min.css é a versao minimizada do bootstrap.css(nao possui espacos) para facilitar o carregamento da pagina-->
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+
+<body>
+    <!--Criacao na barra de navegacao-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/GLStudio.png" alt="Logo da Global Labs" width="300px">
+            </a>
+
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#quemsomos">Quem somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#parceiros">Parceiros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicos">Serviços</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="quemsomos">
+        <!--container cria uma "caixa" com margens o que causa probremas ao colocar cores na "caixa" pois sobra bordas brancas-->
+        <!--container-fluid cria uma "caixa" sem margens dessa forma, se colocado cor, ela preenche a divisão toda, porém, 
+            o texto começa colado na borda. Solução: Nesse caso o teto foi centralizado mas pode-se adicionar padding-->
+        <div class="container-fluid quem-somos text-center padding">
+            <h3 class="subtitle">QUEM SOMOS</h3>
+            <!--rouded-circle faz a imagem ficar circular. Para ser um circulo perfeito a imagem tem que ser quadrada,
+                caso contrario faz uma elipse, Por isso adicionou-se height e width iguais-->
+            <img src="img/team.jpg" class="rounded-circle" alt="Imagem de um time de trabalho" height="400px"
+                width="400px">
+            <h3>Somos um time comprometido com os resultados</h3>
+        </div>
+    </section>
+
+    <section id="parceiros">
+        <div class="container-fluid text-center padding parceiros">
+            <h3 class="subtitle">PARCEIROS</h3>
+            <!--Aqui foi utilizado apenas container para que as imagens a serem adicionadas ficassem um pouco mais distantes da margem-->
+            <div class="container">
+
+                <!--A classe row divide o div em 12 partes, assim posso fazer colunas escolhendo a quantidade de partes que eu 
+                    quero utilizar para cada coluna. Nesse caso como eu queria colocar 3 imagens escolhi 
+                    a classe col-lg-4 para que cada imagem tivesse o tamanho de 4 totalizando 12-->
+                <div class="row">
+                    <div class="col-lg-4">
+                        <img src="img/dio.png" alt="Logo da DIO" width="100%">
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="img/dio.png" alt="Logo da DIO" width="100%">
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="img/dio.png" alt="Logo da DIO" width="100%">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="servicos">
+        <div class="container-fluid text-center padding servicos">
+            <h3 class="subtitle">SERVIÇOS</h3>
+            <div class=container>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="img/site_com.jpg" alt="Pessoa usando um site" width="100%">
+                        <p class=legend_photo>Possuímos o serviço de construção de sites para sua empresa ou perfil
+                            pessoal</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="img/app.jpg" alt="pessoa usando um app de celular" width="100%">
+                        <p class="legend_photo">Possuímos o serviço de construção de aplicativos para smarthphones</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container-fluid text-center bg-footer padding">
+        <p>Desenvolvido por Felipe Lorenzoni Cazotti</p>
+    </footer>
+</body>
+
+</html>

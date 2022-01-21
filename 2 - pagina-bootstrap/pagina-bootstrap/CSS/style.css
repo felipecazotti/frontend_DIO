@@ -1,0 +1,39 @@
+body{
+    font: 20px arial, sans-serif;
+}
+
+.navbar{
+    background-color: #434BFF;
+}
+ 
+.subtitle{
+    padding-bottom: 50px;
+}
+
+.quem-somos{
+    background-color: #5960FF;
+    color: white;
+}
+
+.parceiros{
+    background-color: #7A80FF;
+    color: white;
+}
+
+.servicos{
+    background-color: #A5A9FF;
+}
+
+.padding{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.legend_photo{
+    padding-top: 10px;
+}
+
+.bg-footer{
+    background-color: black;
+    color: white;
+}
